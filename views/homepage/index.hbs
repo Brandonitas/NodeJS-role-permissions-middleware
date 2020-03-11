@@ -1,0 +1,18 @@
+<main role="main" class="container">
+  <div class="starter-template">
+    <div class="text-center">
+      <h1>Home</h1>
+
+    </div>
+    
+      {{#if user.length}}
+        {{#each user}}
+          <h2>Bienvenido, {{this.name}}</h2>
+              <a class="btn btn-success my-2 my-sm-0" href="/dashboard">Dashboard</a>
+              <a class="btn btn-success my-2 my-sm-0" href="/users">Users</a>
+        {{/each}}
+      {{/if}}
+
+  </div>
+</main>
+

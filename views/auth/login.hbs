@@ -1,0 +1,36 @@
+<form class="form-signin" action="/login" method="POST">
+  <div class="text-center mb-4">
+    <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    <p>
+      Template source:
+        <a href="https://getbootstrap.com/docs/4.0/examples/" target="_blank">
+          https://getbootstrap.com/docs/4.0/examples/
+        </a>
+    </p>
+    <p>
+      You don't have an account? <a href="/register">Register</a>
+    </p>
+          <p>
+       <a href="/reset-password">Olvidé mi contraseña</a>
+    </p>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" name="email" class="form-control" required>
+    <label for="email">Email address</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" name="password" class="form-control" required>
+    <label for="password">Password</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  <p class="mt-5 mb-3 text-muted text-center">© {{year}}</p>
+</form>
