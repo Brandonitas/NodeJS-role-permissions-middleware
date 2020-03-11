@@ -1,4 +1,9 @@
-# Manejo de sesiones
+# Manejo de sesiones usando middleware
+
+## Descripción
+
+Existen 3 tipos de usuario, Admin, Usuario e Invitado. 
+El Admin tiene acceso a users y dashboard. El usuario solo tiene acceso a dashboard y el Invitado solo al home. 
 
 ## Requerimientos
 
@@ -21,4 +26,3 @@ cp .env.example .env
 ```bash
 npm install
 ```
-# NodeJS-role-permissions-middleware
