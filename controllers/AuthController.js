@@ -39,14 +39,15 @@ exports.resetPassword = (req,res) =>{
       }
 
       console.log("URL RESET PASSWORD",dataUrl);
-      res.status(200).render('auth/reset-password',{layout: 'auth', url: dataUrl});;
+      res.status(200).render('auth/reset-password',{layout: 'auth', url: url});;
     }else{
+      res.status(200).render('auth/reset-password',{layout: 'auth', error: 'Error'});;
       console.log('Error');
     }
     
   })
   .catch((error)=>{
-    return res.status(422).render('auth/reset-password', {layout: 'auth'});
+    return res.status(422).render('auth/reset-password', {layout: 'auth', error: 'No encontramos tu dirección de correo'});
       console.log(error);
   })
 
