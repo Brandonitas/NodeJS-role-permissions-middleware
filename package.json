@@ -21,7 +21,7 @@
     "express-validator": "^6.4.0",
     "handlebars-helpers": "^0.10.0",
     "jsonwebtoken": "^8.5.1",
-    "knex": "^0.20.11",
+    "knex": "^2.4.0",
     "mysql2": "^2.1.0",
     "sessionstorage": "^0.1.0"
   }
